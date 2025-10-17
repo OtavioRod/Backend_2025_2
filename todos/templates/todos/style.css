@@ -1,0 +1,81 @@
+/* Estilos Gerais */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f7fa;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column; /* Alinha os elementos em coluna */
+  text-align: center; /* Centraliza o texto */
+}
+
+h1 {
+  color: #6a0dad; /* Cor roxa para o título */
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+/* Estilo da Lista de Tarefas */
+ul {
+  list-style-type: none;
+  padding: 0;
+  width: 80%;
+  max-width: 600px;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 2px solid #6a0dad; /* Borda roxa */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+li {
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+/* Remover a borda do último item */
+li:last-child {
+  border-bottom: none;
+}
+
+/* Estilo dos Links */
+a {
+  text-decoration: none;
+  color: #6a0dad; /* Cor roxa */
+  font-weight: bold;
+  display: block; /* Faz com que os links fiquem um embaixo do outro */
+  margin-top: 10px;
+  padding: 8px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Efeito de Hover e Active */
+a:hover {
+  background-color: #6a0dad;
+  color: #fff;
+}
+
+a:active {
+  background-color: #4b0082;
+}
+
+/* Estilo para o Link de "Nova Tarefa" */
+a[href$='todo_create'] {
+  background-color: #6a0dad; /* Cor roxa */
+  color: white;
+  padding: 12px 20px;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  width: 220px;
+  margin-top: 20px;
+}
+
+a[href$='todo_create']:hover {
+  background-color: #4b0082; /* Cor roxa mais escura */
+}
